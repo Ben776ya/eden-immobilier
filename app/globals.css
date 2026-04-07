@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-eden-bg text-eden-cream font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+  ::selection {
+    @apply bg-eden-gold text-eden-bg;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
