@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="border-t border-eden-border mt-14 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-eden-muted text-xs tracking-wider">
           <span>&copy; {new Date().getFullYear()} Eden Immobilier. Tous droits réservés.</span>
-          <span className="text-eden-border-light">Propriétés de prestige en France</span>
+          <span className="text-eden-muted/40">Propriétés de prestige en France</span>
         </div>
       </div>
     </footer>

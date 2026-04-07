@@ -14,7 +14,7 @@ interface FilterBarProps {
 
 export default function FilterBar({ filters, onChange, totalCount }: FilterBarProps) {
   const selectClass =
-    'bg-eden-surface border border-eden-border text-eden-cream text-sm px-4 py-2.5 focus:outline-none focus:border-eden-gold/70 appearance-none cursor-pointer transition-colors duration-300'
+    'bg-eden-surface border border-eden-border text-eden-cream text-sm px-4 py-2.5 focus:outline-none focus:border-eden-gold focus:ring-1 focus:ring-eden-gold/30 appearance-none select-eden cursor-pointer transition-all duration-300'
 
   return (
     <div className="sticky top-20 z-40 bg-eden-bg/98 backdrop-blur-md border-b border-eden-border">
@@ -48,10 +48,10 @@ export default function FilterBar({ filters, onChange, totalCount }: FilterBarPr
           className={selectClass}
         >
           <option value="">Budget max</option>
-          <option value="2000000">jusqu&apos;à 2 M&euro;</option>
-          <option value="4000000">jusqu&apos;à 4 M&euro;</option>
-          <option value="6000000">jusqu&apos;à 6 M&euro;</option>
-          <option value="10000000">jusqu&apos;à 10 M&euro;</option>
+          <option value="2000000">jusqu&apos;à 2 M MAD</option>
+          <option value="4000000">jusqu&apos;à 4 M MAD</option>
+          <option value="6000000">jusqu&apos;à 6 M MAD</option>
+          <option value="10000000">jusqu&apos;à 10 M MAD</option>
         </select>
 
         {(filters.type || filters.status || filters.maxPrice) && (

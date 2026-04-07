@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 const navLinks = [
   { href: '/', label: 'Accueil' },
@@ -16,11 +16,21 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
+  const closeMenu = useCallback(() => setMenuOpen(false), [])
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && menuOpen) closeMenu()
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [menuOpen, closeMenu])
 
   return (
     <nav
@@ -51,7 +61,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/listings"
-            className="ml-4 px-6 py-2.5 border border-eden-gold/60 text-eden-gold text-sm tracking-wider uppercase hover:bg-eden-gold hover:text-eden-bg transition-all duration-300"
+            className="ml-4 px-6 py-2.5 border border-eden-gold/60 text-eden-gold text-sm tracking-wider uppercase hover:bg-eden-gold hover:text-eden-bg active:scale-[0.97] transition-all duration-300"
           >
             Voir les biens
           </Link>
@@ -71,7 +81,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`md:hidden overflow-hidden transition-all duration-400 ease-in-out ${
+        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
           menuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

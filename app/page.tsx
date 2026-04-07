@@ -33,7 +33,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/listings"
-            className="inline-block px-10 py-4 border border-eden-gold/60 text-eden-gold text-sm tracking-widest uppercase hover:bg-eden-gold hover:text-eden-bg hover:border-eden-gold transition-all duration-500 animate-fade-up delay-500"
+            className="inline-block px-10 py-4 border border-eden-gold/60 text-eden-gold text-sm tracking-widest uppercase hover:bg-eden-gold hover:text-eden-bg hover:border-eden-gold active:scale-[0.97] transition-all duration-500 animate-fade-up delay-500"
           >
             Découvrir les propriétés
           </Link>
@@ -116,7 +116,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light transition-colors duration-500"
+            className="inline-block px-10 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light active:scale-[0.97] transition-all duration-500"
           >
             Nous Contacter
           </Link>

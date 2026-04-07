@@ -11,7 +11,7 @@ export default function ContactPage() {
   }
 
   const inputClass =
-    'w-full bg-eden-surface border border-eden-border text-eden-cream px-4 py-3.5 focus:outline-none focus:border-eden-gold/70 transition-colors duration-300 placeholder:text-eden-muted/50'
+    'w-full bg-eden-surface border border-eden-border text-eden-cream px-4 py-3.5 focus:outline-none focus:border-eden-gold focus:ring-1 focus:ring-eden-gold/30 transition-all duration-300 placeholder:text-eden-muted/50'
 
   return (
     <div className="pt-20">
@@ -47,7 +47,7 @@ export default function ContactPage() {
             </div>
             <div>
               <label className="block text-xs tracking-label uppercase text-eden-muted mb-3">Bien souhaité</label>
-              <select className={`${inputClass} appearance-none cursor-pointer`}>
+              <select className={`${inputClass} appearance-none select-eden cursor-pointer`}>
                 <option value="">Sélectionner un type</option>
                 <option>Villa</option>
                 <option>Appartement</option>
@@ -60,7 +60,7 @@ export default function ContactPage() {
               <label className="block text-xs tracking-label uppercase text-eden-muted mb-3">Message *</label>
               <textarea required rows={6} className={`${inputClass} resize-none`} placeholder="Décrivez votre projet immobilier..." />
             </div>
-            <button type="submit" className="w-full py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light transition-colors duration-500">
+            <button type="submit" className="w-full py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light active:scale-[0.98] transition-all duration-500">
               Envoyer le message
             </button>
           </form>

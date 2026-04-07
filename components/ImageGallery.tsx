@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 
 interface ImageGalleryProps {
@@ -12,8 +12,19 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
-  const prev = () => setActiveIndex((i) => (i === 0 ? images.length - 1 : i - 1))
-  const next = () => setActiveIndex((i) => (i === images.length - 1 ? 0 : i + 1))
+  const prev = useCallback(() => setActiveIndex((i) => (i === 0 ? images.length - 1 : i - 1)), [images.length])
+  const next = useCallback(() => setActiveIndex((i) => (i === images.length - 1 ? 0 : i + 1)), [images.length])
+
+  useEffect(() => {
+    if (!lightboxOpen) return
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setLightboxOpen(false)
+      if (e.key === 'ArrowLeft') prev()
+      if (e.key === 'ArrowRight') next()
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [lightboxOpen, prev, next])
 
   return (
     <>
@@ -83,6 +94,8 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
 
       {lightboxOpen && (
         <div
+          role="dialog"
+          aria-label={`Galerie photos — ${title}`}
           className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center animate-fade-in"
           onClick={() => setLightboxOpen(false)}
         >

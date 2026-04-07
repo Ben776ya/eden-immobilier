@@ -11,7 +11,7 @@ export function generateStaticParams() {
 function formatPrice(price: number, status: string) {
   const formatted = new Intl.NumberFormat('fr-FR', {
     style: 'currency',
-    currency: 'EUR',
+    currency: 'MAD',
     maximumFractionDigits: 0,
   }).format(price)
   return status === 'À louer' ? `${formatted} / mois` : formatted
@@ -79,7 +79,7 @@ export default function ListingDetailPage({ params }: { params: { id: string } }
               </p>
               <Link
                 href="/contact"
-                className="block text-center px-6 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light transition-colors duration-500 mb-4"
+                className="block text-center px-6 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light active:scale-[0.97] transition-all duration-500 mb-4"
               >
                 Demander une visite
               </Link>

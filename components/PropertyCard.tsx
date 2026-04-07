@@ -9,7 +9,7 @@ interface PropertyCardProps {
 function formatPrice(price: number, status: Listing['status']) {
   const formatted = new Intl.NumberFormat('fr-FR', {
     style: 'currency',
-    currency: 'EUR',
+    currency: 'MAD',
     maximumFractionDigits: 0,
   }).format(price)
   return status === 'À louer' ? `${formatted} / mois` : formatted

@@ -125,7 +125,7 @@ export default function AboutPage() {
         <div className="w-10 h-px bg-eden-gold/40 mx-auto mb-8" />
         <Link
           href="/contact"
-          className="inline-block px-10 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light transition-colors duration-500"
+          className="inline-block px-10 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light active:scale-[0.97] transition-all duration-500"
         >
           Prendre contact
         </Link>
