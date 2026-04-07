@@ -14,10 +14,10 @@ interface FilterBarProps {
 
 export default function FilterBar({ filters, onChange, totalCount }: FilterBarProps) {
   const selectClass =
-    'bg-eden-surface border border-eden-border text-eden-cream text-sm px-4 py-2.5 focus:outline-none focus:border-eden-gold appearance-none cursor-pointer'
+    'bg-eden-surface border border-eden-border text-eden-cream text-sm px-4 py-2.5 focus:outline-none focus:border-eden-gold/70 appearance-none cursor-pointer transition-colors duration-300'
 
   return (
-    <div className="sticky top-20 z-40 bg-eden-bg/95 backdrop-blur-sm border-b border-eden-border">
+    <div className="sticky top-20 z-40 bg-eden-bg/98 backdrop-blur-md border-b border-eden-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center gap-4">
         <select
           value={filters.type}
@@ -48,22 +48,22 @@ export default function FilterBar({ filters, onChange, totalCount }: FilterBarPr
           className={selectClass}
         >
           <option value="">Budget max</option>
-          <option value="2000000">jusqu&apos;à 2 M€</option>
-          <option value="4000000">jusqu&apos;à 4 M€</option>
-          <option value="6000000">jusqu&apos;à 6 M€</option>
-          <option value="10000000">jusqu&apos;à 10 M€</option>
+          <option value="2000000">jusqu&apos;à 2 M&euro;</option>
+          <option value="4000000">jusqu&apos;à 4 M&euro;</option>
+          <option value="6000000">jusqu&apos;à 6 M&euro;</option>
+          <option value="10000000">jusqu&apos;à 10 M&euro;</option>
         </select>
 
         {(filters.type || filters.status || filters.maxPrice) && (
           <button
             onClick={() => onChange({ type: '', status: '', maxPrice: '' })}
-            className="text-eden-muted text-sm hover:text-eden-gold transition-colors underline"
+            className="text-eden-muted text-sm hover:text-eden-gold transition-colors duration-300 underline underline-offset-4"
           >
             Réinitialiser
           </button>
         )}
 
-        <span className="ml-auto text-eden-muted text-sm">
+        <span className="ml-auto text-eden-muted text-sm tracking-wider">
           {totalCount} propriété{totalCount !== 1 ? 's' : ''}
         </span>
       </div>

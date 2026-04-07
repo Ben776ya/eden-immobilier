@@ -30,26 +30,27 @@ export default function ListingDetailPage({ params }: { params: { id: string } }
           <div className="lg:col-span-2">
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs tracking-widest uppercase text-eden-gold">
+                <span className="text-xs tracking-label uppercase text-eden-gold">
                   {listing.type}
                 </span>
-                <span className="w-px h-3 bg-eden-border" />
-                <span className="text-xs tracking-widest uppercase text-eden-muted">
+                <span className="w-px h-3 bg-eden-border-light" />
+                <span className="text-xs tracking-label uppercase text-eden-muted">
                   {listing.location}
                 </span>
                 <span
                   className={`ml-auto px-3 py-1 text-xs tracking-widest uppercase ${
                     listing.status === 'Vendu'
-                      ? 'bg-eden-muted text-eden-bg'
+                      ? 'bg-eden-muted/90 text-eden-bg'
                       : 'bg-eden-gold text-eden-bg'
                   }`}
                 >
                   {listing.status}
                 </span>
               </div>
-              <h1 className="font-serif text-4xl md:text-5xl text-eden-cream mb-6 leading-tight">
+              <h1 className="font-serif text-4xl md:text-5xl text-eden-cream mb-5 leading-tight">
                 {listing.title}
               </h1>
+              <div className="w-10 h-px bg-eden-gold/40 mb-5" />
               <p className="font-serif text-3xl text-eden-gold">
                 {formatPrice(listing.price, listing.status)}
               </p>
@@ -65,7 +66,7 @@ export default function ListingDetailPage({ params }: { params: { id: string } }
             </div>
 
             <div>
-              <p className="text-xs tracking-widest uppercase text-eden-gold mb-4">Description</p>
+              <p className="text-xs tracking-label uppercase text-eden-gold mb-4">Description</p>
               <p className="text-eden-muted leading-relaxed text-lg">{listing.description}</p>
             </div>
           </div>
@@ -78,13 +79,13 @@ export default function ListingDetailPage({ params }: { params: { id: string } }
               </p>
               <Link
                 href="/contact"
-                className="block text-center px-6 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-cream transition-colors duration-300 mb-4"
+                className="block text-center px-6 py-4 bg-eden-gold text-eden-bg text-sm tracking-widest uppercase hover:bg-eden-gold-light transition-colors duration-500 mb-4"
               >
                 Demander une visite
               </Link>
               <Link
                 href="/contact"
-                className="block text-center px-6 py-3 border border-eden-border text-eden-muted text-sm tracking-widest uppercase hover:border-eden-gold hover:text-eden-gold transition-colors duration-300"
+                className="block text-center px-6 py-3 border border-eden-border text-eden-muted text-sm tracking-widest uppercase hover:border-eden-gold hover:text-eden-gold transition-all duration-500"
               >
                 Nous contacter
               </Link>
@@ -99,9 +100,9 @@ export default function ListingDetailPage({ params }: { params: { id: string } }
         <div className="mt-16 pt-10 border-t border-eden-border">
           <Link
             href="/listings"
-            className="text-eden-muted text-sm tracking-wider hover:text-eden-gold transition-colors"
+            className="text-eden-muted text-sm tracking-wider hover:text-eden-gold transition-colors duration-300"
           >
-            ← Retour aux propriétés
+            &larr; Retour aux propriétés
           </Link>
         </div>
       </div>

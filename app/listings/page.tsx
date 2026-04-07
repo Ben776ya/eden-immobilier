@@ -21,9 +21,10 @@ export default function ListingsPage() {
     <div className="pt-20">
       <FilterBar filters={filters} onChange={setFilters} totalCount={filtered.length} />
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="mb-12">
-          <p className="text-xs tracking-[0.4em] uppercase text-eden-gold mb-3">Portfolio</p>
-          <h1 className="font-serif text-4xl text-eden-cream">Nos Propriétés</h1>
+        <div className="mb-14">
+          <p className="text-xs tracking-label uppercase text-eden-gold mb-4">Portfolio</p>
+          <h1 className="font-serif text-4xl md:text-5xl text-eden-cream mb-5">Nos Propriétés</h1>
+          <div className="w-10 h-px bg-eden-gold/40" />
         </div>
         {filtered.length === 0 ? (
           <div className="text-center py-24">
