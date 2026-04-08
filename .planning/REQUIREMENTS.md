@@ -92,40 +92,40 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CLR-01 | Pending | Pending |
-| CLR-02 | Pending | Pending |
-| CLR-03 | Pending | Pending |
-| CLR-04 | Pending | Pending |
-| CLR-05 | Pending | Pending |
-| TYP-01 | Pending | Pending |
-| TYP-02 | Pending | Pending |
-| TYP-03 | Pending | Pending |
-| NAV-01 | Pending | Pending |
-| NAV-02 | Pending | Pending |
-| NAV-03 | Pending | Pending |
-| FTR-01 | Pending | Pending |
-| FTR-02 | Pending | Pending |
-| CRD-01 | Pending | Pending |
-| CRD-02 | Pending | Pending |
-| CRD-03 | Pending | Pending |
-| CRD-04 | Pending | Pending |
-| MOT-01 | Pending | Pending |
-| MOT-02 | Pending | Pending |
-| MOT-03 | Pending | Pending |
-| MOT-04 | Pending | Pending |
-| WHA-01 | Pending | Pending |
-| WHA-02 | Pending | Pending |
-| WHA-03 | Pending | Pending |
-| POL-01 | Pending | Pending |
-| POL-02 | Pending | Pending |
-| POL-03 | Pending | Pending |
-| POL-04 | Pending | Pending |
+| CLR-01 | Phase 1 | Pending |
+| CLR-02 | Phase 1 | Pending |
+| CLR-03 | Phase 1 | Pending |
+| CLR-04 | Phase 1 | Pending |
+| CLR-05 | Phase 1 | Pending |
+| TYP-01 | Phase 1 | Pending |
+| TYP-02 | Phase 1 | Pending |
+| TYP-03 | Phase 1 | Pending |
+| NAV-01 | Phase 2 | Pending |
+| NAV-02 | Phase 2 | Pending |
+| NAV-03 | Phase 2 | Pending |
+| FTR-01 | Phase 2 | Pending |
+| FTR-02 | Phase 2 | Pending |
+| CRD-01 | Phase 3 | Pending |
+| CRD-02 | Phase 3 | Pending |
+| CRD-03 | Phase 3 | Pending |
+| CRD-04 | Phase 3 | Pending |
+| MOT-01 | Phase 4 | Pending |
+| MOT-02 | Phase 4 | Pending |
+| MOT-03 | Phase 4 | Pending |
+| MOT-04 | Phase 4 | Pending |
+| WHA-01 | Phase 5 | Pending |
+| WHA-02 | Phase 5 | Pending |
+| WHA-03 | Phase 5 | Pending |
+| POL-01 | Phase 5 | Pending |
+| POL-02 | Phase 5 | Pending |
+| POL-03 | Phase 5 | Pending |
+| POL-04 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 28 total
-- Mapped to phases: 0
-- Unmapped: 28 ⚠️
+- Mapped to phases: 28
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-08*
-*Last updated: 2026-04-08 after initial definition*
+*Last updated: 2026-04-07 after roadmap creation*
