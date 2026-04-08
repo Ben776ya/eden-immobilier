@@ -23,7 +23,10 @@ The redesign proceeds in five phases: establish the design foundation (tokens an
   2. Gold accents (#C5A47E) appear on decorative elements; a darker gold variant is used for readable text on light backgrounds
   3. All body text, headings, and labels use Outfit — no Playfair Display or DM Sans fonts remain visible
   4. All text/background combinations pass WCAG AA (4.5:1 contrast) — no invisible or unreadable text anywhere on the site
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Install tailwindcss-motion, replace tailwind.config.ts tokens, swap font loading to Outfit, update globals.css base layer
+- [ ] 01-02-PLAN.md — Build verification and visual font rendering checkpoint
 **UI hint**: yes
 
 ### Phase 2: Navigation & Footer
@@ -76,11 +79,11 @@ The redesign proceeds in five phases: establish the design foundation (tokens an
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design Foundation | 0/TBD | Not started | - |
+| 1. Design Foundation | 0/2 | Planned | - |
 | 2. Navigation & Footer | 0/TBD | Not started | - |
 | 3. Property Cards & Listings | 0/TBD | Not started | - |
 | 4. Motion & Interactions | 0/TBD | Not started | - |
