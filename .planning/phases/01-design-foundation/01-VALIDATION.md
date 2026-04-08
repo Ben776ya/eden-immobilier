@@ -2,7 +2,7 @@
 phase: 1
 slug: design-foundation
 status: draft
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: false
 created: 2026-04-08
 ---
@@ -40,12 +40,12 @@ created: 2026-04-08
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
 | 1-01-01 | 01 | 1 | CLR-01 | build | `npm run build` | ✅ | ⬜ pending |
 | 1-01-02 | 01 | 1 | CLR-02 | build | `npm run build` | ✅ | ⬜ pending |
-| 1-01-03 | 01 | 1 | CLR-03 | grep | `grep -c "gold-text" tailwind.config.ts` | ❌ W0 | ⬜ pending |
+| 1-01-03 | 01 | 1 | CLR-03 | grep | `grep -cE "'gold-deep':\|'gold-light':" tailwind.config.ts` | ✅ | ⬜ pending |
 | 1-01-04 | 01 | 1 | CLR-04 | visual | manual — inspect dark/light zones | N/A | ⬜ pending |
 | 1-01-05 | 01 | 1 | CLR-05 | grep | `grep -c "WCAG" .planning/phases/01-design-foundation/01-RESEARCH.md` | ✅ | ⬜ pending |
-| 1-02-01 | 02 | 1 | TYP-01 | grep | `grep -c "Outfit" app/layout.tsx` | ❌ W0 | ⬜ pending |
-| 1-02-02 | 02 | 1 | TYP-02 | build | `npm run build` | ✅ | ⬜ pending |
-| 1-02-03 | 02 | 1 | TYP-03 | grep | `grep "300\|400\|500\|600" app/layout.tsx` | ❌ W0 | ⬜ pending |
+| 1-02-01 | 02 | 2 | TYP-01 | grep | `grep -c "Outfit" app/layout.tsx` | ✅ | ⬜ pending |
+| 1-02-02 | 02 | 2 | TYP-02 | build | `npm run build` | ✅ | ⬜ pending |
+| 1-02-03 | 02 | 2 | TYP-03 | grep | `grep "300\|400\|500\|600" app/layout.tsx` | ✅ | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -54,6 +54,7 @@ created: 2026-04-08
 ## Wave 0 Requirements
 
 - Existing infrastructure covers all phase requirements (build + lint + grep verification)
+- Tasks 1-02-01 and 1-02-03 use inline grep checks against files produced by Plan 01 — no separate test scaffold needed
 
 *No test framework install needed — Phase 1 is a config-level change verified by successful build and grep checks.*
 
@@ -72,11 +73,11 @@ created: 2026-04-08
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
-- [ ] No watch-mode flags
-- [ ] Feedback latency < 15s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] All tasks have `<automated>` verify or Wave 0 dependencies
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 covers all MISSING references
+- [x] No watch-mode flags
+- [x] Feedback latency < 15s
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** approved
