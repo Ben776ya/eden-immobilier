@@ -16,7 +16,7 @@
 ### Typography
 
 - [x] **TYP-01**: Replace Playfair Display + DM Sans with Outfit via next/font/google (self-hosted, zero FOUT)
-- [ ] **TYP-02**: Consistent typographic scale — headings feel family-related, body 16-18px, labels ultra-tracked
+- [x] **TYP-02**: Consistent typographic scale — headings feel family-related, body 16-18px, labels ultra-tracked
 - [x] **TYP-03**: All font weights loaded: 300 (light), 400 (regular), 500 (medium), 600 (semibold)
 
 ### Navigation
@@ -98,7 +98,7 @@
 | CLR-04 | Phase 1 | Complete |
 | CLR-05 | Phase 1 | Complete |
 | TYP-01 | Phase 1 | Complete |
-| TYP-02 | Phase 1 | Pending |
+| TYP-02 | Phase 1 | Complete |
 | TYP-03 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |

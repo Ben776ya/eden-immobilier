@@ -26,7 +26,7 @@ The redesign proceeds in five phases: establish the design foundation (tokens an
 **Plans**: 2 plans
 Plans:
 - [x] 01-01-PLAN.md — Install tailwindcss-motion, replace tailwind.config.ts tokens, swap font loading to Outfit, update globals.css base layer
-- [ ] 01-02-PLAN.md — Build verification and visual font rendering checkpoint
+- [x] 01-02-PLAN.md — Build verification and visual font rendering checkpoint
 **UI hint**: yes
 
 ### Phase 2: Navigation & Footer
