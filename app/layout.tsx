@@ -1,19 +1,14 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, DM_Sans } from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const playfair = Playfair_Display({
+const outfit = Outfit({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-outfit',
   display: 'swap',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-dm-sans',
-  display: 'swap',
+  weight: ['300', '400', '500', '600'],
 })
 
 export const metadata: Metadata = {
@@ -28,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${playfair.variable} ${dmSans.variable}`}>
-      <body className="bg-eden-bg text-eden-cream font-sans antialiased">
+    <html lang="fr" className={outfit.variable}>
+      <body className="bg-eden-surface text-eden-text font-sans antialiased">
         <Navbar />
         <main>{children}</main>
         <Footer />
