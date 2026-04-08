@@ -7,13 +7,10 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-eden-bg text-eden-cream font-sans antialiased;
-  }
-  h1, h2, h3, h4, h5 {
-    @apply font-serif;
+    @apply bg-eden-surface text-eden-text font-sans antialiased;
   }
   ::selection {
-    @apply bg-eden-gold text-eden-bg;
+    @apply bg-eden-gold text-eden-ink;
   }
 }
 
@@ -102,7 +99,7 @@
 
 /* Focus-visible — gold ring for keyboard navigation */
 *:focus-visible {
-  outline: 2px solid #C9A84C;
+  outline: 2px solid theme('colors.eden.gold');
   outline-offset: 2px;
 }
 
@@ -114,7 +111,7 @@
 /* Custom select arrow for appearance-none selects */
 select.appearance-none,
 .select-eden {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239E9289' d='M6 8.5L1 3.5h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23716A65' d='M6 8.5L1 3.5h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 12px;

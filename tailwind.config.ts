@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
-import tailwindcssMotion from 'tailwindcss-motion'
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const tailwindcssMotion = require('tailwindcss-motion')
 
 const config: Config = {
   content: [
