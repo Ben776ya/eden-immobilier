@@ -7,17 +7,17 @@
 
 ### Color System
 
-- [ ] **CLR-01**: Full palette replacement — dark header/footer (#1C1917), warm light body (#FAFAF8), gold accents (#C5A47E)
-- [ ] **CLR-02**: Two-layer token system — primitive color values + semantic token names in Tailwind config
-- [ ] **CLR-03**: Dual-role gold tokens — decorative gold for borders/dividers, darker gold for text on light backgrounds
-- [ ] **CLR-04**: Section contrast zones — dark bookend sections (nav/footer) with warm light content areas
-- [ ] **CLR-05**: All text passes WCAG AA contrast ratios (4.5:1 minimum) on their respective backgrounds
+- [x] **CLR-01**: Full palette replacement — dark header/footer (#1C1917), warm light body (#FAFAF8), gold accents (#C5A47E)
+- [x] **CLR-02**: Two-layer token system — primitive color values + semantic token names in Tailwind config
+- [x] **CLR-03**: Dual-role gold tokens — decorative gold for borders/dividers, darker gold for text on light backgrounds
+- [x] **CLR-04**: Section contrast zones — dark bookend sections (nav/footer) with warm light content areas
+- [x] **CLR-05**: All text passes WCAG AA contrast ratios (4.5:1 minimum) on their respective backgrounds
 
 ### Typography
 
-- [ ] **TYP-01**: Replace Playfair Display + DM Sans with Outfit via next/font/google (self-hosted, zero FOUT)
+- [x] **TYP-01**: Replace Playfair Display + DM Sans with Outfit via next/font/google (self-hosted, zero FOUT)
 - [ ] **TYP-02**: Consistent typographic scale — headings feel family-related, body 16-18px, labels ultra-tracked
-- [ ] **TYP-03**: All font weights loaded: 300 (light), 400 (regular), 500 (medium), 600 (semibold)
+- [x] **TYP-03**: All font weights loaded: 300 (light), 400 (regular), 500 (medium), 600 (semibold)
 
 ### Navigation
 
@@ -92,14 +92,14 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CLR-01 | Phase 1 | Pending |
-| CLR-02 | Phase 1 | Pending |
-| CLR-03 | Phase 1 | Pending |
-| CLR-04 | Phase 1 | Pending |
-| CLR-05 | Phase 1 | Pending |
-| TYP-01 | Phase 1 | Pending |
+| CLR-01 | Phase 1 | Complete |
+| CLR-02 | Phase 1 | Complete |
+| CLR-03 | Phase 1 | Complete |
+| CLR-04 | Phase 1 | Complete |
+| CLR-05 | Phase 1 | Complete |
+| TYP-01 | Phase 1 | Complete |
 | TYP-02 | Phase 1 | Pending |
-| TYP-03 | Phase 1 | Pending |
+| TYP-03 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |

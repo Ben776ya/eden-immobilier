@@ -25,7 +25,7 @@ The redesign proceeds in five phases: establish the design foundation (tokens an
   4. All text/background combinations pass WCAG AA (4.5:1 contrast) — no invisible or unreadable text anywhere on the site
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Install tailwindcss-motion, replace tailwind.config.ts tokens, swap font loading to Outfit, update globals.css base layer
+- [x] 01-01-PLAN.md — Install tailwindcss-motion, replace tailwind.config.ts tokens, swap font loading to Outfit, update globals.css base layer
 - [ ] 01-02-PLAN.md — Build verification and visual font rendering checkpoint
 **UI hint**: yes
 
@@ -83,7 +83,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design Foundation | 0/2 | Planned | - |
+| 1. Design Foundation | 1/2 | In Progress|  |
 | 2. Navigation & Footer | 0/TBD | Not started | - |
 | 3. Property Cards & Listings | 0/TBD | Not started | - |
 | 4. Motion & Interactions | 0/TBD | Not started | - |
