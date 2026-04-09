@@ -86,7 +86,7 @@ export default function Navbar() {
           menuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-eden-surface border-t border-eden-border px-6 pt-20 pb-8 flex flex-col gap-6">
+        <div className="bg-eden-surface border-t border-eden-border px-6 pt-36 pb-8 flex flex-col gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
