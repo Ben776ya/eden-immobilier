@@ -9,11 +9,7 @@ export function generateStaticParams() {
 }
 
 function formatPrice(price: number, status: string) {
-  const formatted = new Intl.NumberFormat('fr-FR', {
-    style: 'currency',
-    currency: 'MAD',
-    maximumFractionDigits: 0,
-  }).format(price)
+  const formatted = price.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' MAD'
   return status === 'À louer' ? `${formatted} / mois` : formatted
 }
 

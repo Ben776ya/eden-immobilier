@@ -9,7 +9,7 @@ interface AdminTableProps {
 }
 
 function formatPrice(price: number) {
-  return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'MAD', maximumFractionDigits: 0 }).format(price)
+  return price.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' MAD'
 }
 
 export default function AdminTable({ listings, onDelete }: AdminTableProps) {
