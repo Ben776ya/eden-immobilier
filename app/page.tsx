@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-40">
         <Image
           src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=90"
           alt="Eden Immobilier — Propriété de prestige"
@@ -20,14 +20,12 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-eden-bg/70 via-eden-bg/30 to-eden-bg" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-xs tracking-label uppercase text-eden-gold mb-6 animate-fade-up">
-            L&apos;Excellence Immobilière
-          </p>
+
           <h1 className="font-serif text-5xl md:text-7xl text-eden-cream mb-8 leading-tight animate-fade-up delay-200">
-            Eden Immobilier
+            L&apos;IMMOBILIER DE PRESTIGE, RÉINVENTÉ
           </h1>
           <div className="w-12 h-px bg-eden-gold/50 mx-auto mb-8 animate-fade-in delay-300" />
-          <p className="text-eden-muted text-lg md:text-xl mb-12 max-w-xl mx-auto leading-relaxed animate-fade-up delay-300">
+          <p className="text-white text-lg md:text-xl mb-12 max-w-xl mx-auto leading-relaxed animate-fade-up delay-300">
             Propriétés d&apos;exception pour une clientèle d&apos;exception.
             Découvrez notre sélection exclusive.
           </p>

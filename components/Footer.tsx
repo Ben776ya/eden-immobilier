@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,9 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           <div>
-            <p className="font-serif text-lg tracking-widest text-eden-gold uppercase mb-5">
-              Eden Immobilier
-            </p>
+            <div className="py-4 mb-5">
+              <Image src="/logo.png" alt="Boy Pro Immobilier" width={170} height={90} className="object-contain" />
+            </div>
             <p className="text-eden-muted text-sm leading-relaxed mb-6">
               L&apos;excellence au service de votre patrimoine immobilier. Propriétés de prestige
               sur la Côte d&apos;Azur, à Paris et dans les plus beaux domaines de France.
@@ -48,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-eden-border mt-14 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-eden-muted text-xs tracking-wider">
-          <span>&copy; {new Date().getFullYear()} Eden Immobilier. Tous droits réservés.</span>
+          <span>&copy; {new Date().getFullYear()} Boy Pro Immobilier. Tous droits réservés.</span>
           <span className="text-eden-muted/40">Propriétés de prestige en France</span>
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect, useCallback } from 'react'
 
@@ -40,12 +41,12 @@ export default function Navbar() {
           : 'bg-eden-bg/80 backdrop-blur-sm border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="font-serif text-xl tracking-widest text-eden-gold uppercase">
-          Eden Immobilier
+      <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+        <Link href="/" className="flex items-center pt-6 pb-2">
+          <Image src="/logo.png" alt="Boy Pro Immobilier" width={150} height={80} className="object-contain" style={{ marginTop: '34px' }} priority />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8" style={{ marginTop: '34px' }}>
           {navLinks.map((link) => (
             <Link
               key={link.href}
