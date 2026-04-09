@@ -41,7 +41,7 @@ export default function Navbar() {
           : 'bg-eden-bg/80 backdrop-blur-sm border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-36 md:h-28 flex items-center justify-between">
         <Link href="/" className="flex items-center pt-6 pb-2">
           <Image src="/logo.png" alt="Boy Pro Immobilier" width={150} height={80} className={`object-contain transition-all duration-500 ${scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} style={{ marginTop: '34px' }} priority />
         </Link>
@@ -85,8 +85,9 @@ export default function Navbar() {
         className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
           menuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
+        style={{ marginTop: '2rem' }}
       >
-        <div className="bg-eden-surface border-t border-eden-border px-6 pb-8 flex flex-col gap-6" style={{ paddingTop: '4rem' }}>
+        <div className="bg-eden-surface border-t border-eden-border px-6 py-8 flex flex-col gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}

@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-40">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-36 md:mt-40">
         <Image
           src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=90"
           alt="Eden Immobilier — Propriété de prestige"
