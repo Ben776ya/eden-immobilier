@@ -43,7 +43,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-36 md:h-28 flex items-center justify-between">
         <Link href="/" className="flex items-center pt-6 pb-2">
-          <Image src="/logo.png" alt="Boy Pro Immobilier" width={150} height={80} className={`object-contain transition-all duration-500 ${scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} style={{ marginTop: '34px' }} priority />
+          <Image src="/logo.png" alt="Boy Pro Immobilier" width={150} height={80} className="object-contain" style={{ marginTop: '34px' }} priority />
         </Link>
 
         <div className="hidden md:flex items-center gap-8" style={{ marginTop: '34px' }}>
