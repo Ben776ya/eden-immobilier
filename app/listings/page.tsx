@@ -18,7 +18,7 @@ export default function ListingsPage() {
   }, [filters])
 
   return (
-    <div className="pt-20">
+    <div className="pt-52 md:pt-20">
       <FilterBar filters={filters} onChange={setFilters} totalCount={filtered.length} />
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-14">
