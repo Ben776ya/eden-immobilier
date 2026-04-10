@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-eden-ink border-t border-eden-white/10">
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-10">
           <div>
             <div className="py-4 mb-5">
               <Image src="/logo.png" alt="Boy Pro Immobilier" width={170} height={90} className="object-contain" />
@@ -47,13 +47,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <p className="text-xs tracking-label uppercase text-eden-gold mb-5">Notre siège</p>
             <div className="rounded-lg overflow-hidden border border-eden-white/10">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846!2d-7.6322!3d33.5883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2e9deb0b0b5%3A0x0!2sMaarif%2C+Casablanca!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma"
                 width="100%"
-                height="180"
+                height="300"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"

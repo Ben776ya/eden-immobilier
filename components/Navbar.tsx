@@ -41,10 +41,10 @@ export default function Navbar() {
           : 'top-0 left-0 right-0 bg-eden-ink/90 backdrop-blur-xl'
       }`}
     >
-      <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-500 ${
-        scrolled ? 'h-16' : 'h-24'
+      <div className={`max-w-7xl mx-auto px-6 relative transition-all duration-500 ${
+        scrolled ? 'h-16' : 'h-28'
       }`}>
-        <Link href="/" className="flex items-center">
+        <Link href="/" className={`absolute left-6 top-1/2 -translate-y-1/2 flex items-center ${scrolled ? '' : 'py-3'}`}>
           <Image
             src="/logo.png"
             alt="Boy Pro Immobilier"
@@ -56,7 +56,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-8 absolute left-[200px] right-6 top-1/2 -translate-y-1/2">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -79,7 +79,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-eden-white"
+          className="md:hidden text-eden-white absolute right-6 top-1/2 -translate-y-1/2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
