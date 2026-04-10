@@ -38,7 +38,7 @@ export default function Navbar() {
       className={`fixed z-50 transition-all duration-500 ${
         scrolled
           ? 'top-4 left-4 right-4 bg-eden-ink/90 backdrop-blur-xl rounded-2xl shadow-luxury-hover border border-eden-white/10'
-          : 'top-0 left-0 right-0 bg-transparent'
+          : 'top-0 left-0 right-0 bg-eden-ink/90 backdrop-blur-xl'
       }`}
     >
       <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-500 ${
@@ -48,10 +48,10 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Boy Pro Immobilier"
-            width={scrolled ? 100 : 160}
-            height={scrolled ? 50 : 80}
+            width={scrolled ? 80 : 130}
+            height={scrolled ? 40 : 65}
             className="object-contain transition-all duration-500"
-            style={{ width: scrolled ? 100 : 160, height: 'auto' }}
+            style={{ width: scrolled ? 80 : 130, height: 'auto' }}
             priority
           />
         </Link>
