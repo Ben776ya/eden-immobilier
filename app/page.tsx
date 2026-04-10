@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-36 md:mt-40">
         <Image
           src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=90"
           alt="Eden Immobilier — Propriété de prestige"
@@ -24,7 +24,7 @@ export default function HomePage() {
             L&apos;Excellence Immobilière
           </p>
           <h1 className="text-5xl md:text-7xl text-eden-white mb-8 leading-tight animate-fade-up delay-200 font-semibold">
-            Eden Immobilier
+            L&apos;IMMOBILIER DE PRESTIGE, RÉINVENTÉ
           </h1>
           <div className="w-12 h-px bg-eden-gold/50 mx-auto mb-8 animate-fade-in delay-300" />
           <p className="text-eden-white/70 text-lg md:text-xl mb-12 max-w-xl mx-auto leading-relaxed animate-fade-up delay-300">

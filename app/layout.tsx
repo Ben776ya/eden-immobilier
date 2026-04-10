@@ -12,7 +12,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Eden Immobilier — Propriétés de Prestige',
+  title: 'Boy Pro Immobilier — Propriétés de Prestige',
   description:
     "Découvrez notre sélection exclusive de propriétés de luxe sur la Côte d'Azur, à Paris et dans les plus beaux domaines de France.",
 }

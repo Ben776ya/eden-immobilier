@@ -19,7 +19,7 @@ function PasswordGate() {
   return (
     <div className="min-h-screen bg-eden-bg flex items-center justify-center px-6">
       <div className="w-full max-w-sm bg-eden-surface border border-eden-border p-10">
-        <p className="font-serif text-xl text-eden-gold text-center mb-2">Eden Immobilier</p>
+        <p className="font-serif text-xl text-eden-gold text-center mb-2">Boy Pro Immobilier</p>
         <p className="text-eden-muted text-sm text-center mb-8 tracking-wider">Administration</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,9 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           <div>
-            <p className="text-lg tracking-widest text-eden-gold uppercase mb-5 font-semibold">
-              Eden Immobilier
-            </p>
+            <div className="py-4 mb-5">
+              <Image src="/logo.png" alt="Boy Pro Immobilier" width={170} height={90} className="object-contain" />
+            </div>
             <p className="text-eden-white/60 text-sm leading-relaxed mb-6">
               L&apos;excellence au service de votre patrimoine immobilier. Propriétés de prestige
               à Casablanca et dans les plus belles villes du Maroc.
@@ -64,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-eden-white/10 mt-14 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-eden-white/40 text-xs tracking-wider">
-          <span>&copy; {new Date().getFullYear()} Eden Immobilier. Tous droits réservés.</span>
+          <span>&copy; {new Date().getFullYear()} Boy Pro Immobilier. Tous droits réservés.</span>
           <span>Propriétés de prestige au Maroc</span>
         </div>
       </div>
